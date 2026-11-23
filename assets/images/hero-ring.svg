@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+    <!-- Ring Band -->
+    <circle cx="100" cy="115" r="55" stroke="#DEB46A" stroke-width="8"/>
+    <circle cx="100" cy="115" r="43" stroke="#DEB46A" stroke-width="2" stroke-dasharray="2 3"/>
+    <!-- Diamond Setting Crown -->
+    <path d="M78 60 L122 60 L132 42 L68 42 Z" stroke="#DEB46A" stroke-width="4" fill="none"/>
+    <polygon points="68,42 132,42 122,60 78,60" fill="none" stroke="#DEB46A" stroke-width="4"/>
+    <line x1="100" y1="42" x2="100" y2="60" stroke="#DEB46A" stroke-width="3"/>
+    <line x1="84" y1="42" x2="88" y2="60" stroke="#DEB46A" stroke-width="3"/>
+    <line x1="116" y1="42" x2="112" y2="60" stroke="#DEB46A" stroke-width="3"/>
+    <line x1="68" y1="42" x2="100" y2="60" stroke="#DEB46A" stroke-width="2"/>
+    <line x1="132" y1="42" x2="100" y2="60" stroke="#DEB46A" stroke-width="2"/>
+  </svg>

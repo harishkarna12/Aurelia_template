@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURELIA — Gold & Bridal Jewellery</title>
+    <!--favicon-->
+    <link rel="icon" type="image/svg+xml" href="./assets/images/fav-logo.svg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1200;">
+        <div id="actionToast" class="toast toast-custom align-items-center border-0 shadow-lg" role="alert"
+            aria-live="assertive" aria-atomic="true">
+            <div class="d-flex align-items-center">
+                <div class="toast-body d-flex align-items-center gap-3 py-3 px-3">
+                    <i id="toastIcon" class="bi bi-heart-fill text-danger fs-4 flex-shrink-0"></i>
+                    <div>
+                        <div id="toastTitle" class="fw-bold font-serif fs-5 text-gold mb-0">Added to Wishlist</div>
+                        <div id="toastMsg" class="small text-white-50">Product has been added to your wishlist.</div>
+                    </div>
+                </div>
+                <button type="button" class="btn-close btn-close-white me-3 m-auto" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!--Header-->
+    <header class="py-3">
+        <div class="container-fluid px-3 px-md-4 px-lg-5 site-container">
+            <nav class="navbar navbar-expand-lg p-0 align-items-center">
+                <a class="navbar-brand font-cinzel brand-logo text-charcoal fw-bold m-0" href="#">AURELIA</a>
+
+                <button class="navbar-toggler border-0 shadow-none px-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#aureliaNavbar" aria-controls="aureliaNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="aureliaNavbar">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-center-links">
+                        <li class="nav-item"><a class="nav-link" href="#rings">Rings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#necklaces">Necklaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#bangles">Bangles</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#bridal">Bridal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gold-plan">Gold Plan</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="d-flex align-items-center gap-2">
+                    <div class="gold-rate-pill d-none d-sm-flex align-items-center">
+                        <span class="rate-dot"></span>
+                        <span>22K today: ₹6,410/g</span>
+                    </div>
+
+                    <button class="icon-circle-btn text-charcoal" aria-label="Search">
+                        <i class="bi bi-search"></i>
+                    </button>
+
+                    <button class="icon-circle-btn text-charcoal" aria-label="Cart Bag">
+                        <i class="bi bi-bag"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container-fluid px-3 px-md-4 px-lg-5 pb-5 site-container">
+
+        <!--HERO SECTION -->
+        <section class="mb-4">
+            <div class="row g-3">
+                <div class="col-lg-7">
+                    <div
+                        class="bg-dark-luxury rounded-luxury hover-lift hero-main-card d-flex flex-column justify-content-between p-4 p-md-5 position-relative overflow-hidden">
+                        <div class="position-relative z-1">
+                            <span
+                                class="text-gold text-uppercase fw-semibold letter-spacing small mb-3 d-inline-block">NEW
+                                SEASON - TEMPLE & BRIDAL</span>
+                            <h1 class="font-serif hero-heading text-white mt-2 mb-3">
+                                Gold that<br>
+                                remembers<br>
+                                every<br>
+                                occasion.
+                            </h1>
+                            <p class="small text-uppercase text-white-50 letter-spacing mb-4">[ONE LINE ABOUT YOUR
+                                HERITAGE AND CRAFT]</p>
+
+                            <a href="#bridal" class="hero-explore-btn text-decoration-none">
+                                Explore bridal <span class="ms-1">→</span>
+                            </a>
+                        </div>
+                        <div class="position-absolute end-0 top-0 mt-4 me-3 me-md-5 d-none d-md-block pe-none">
+                            <img src="assets/images/hero-ring.svg" alt="Gold Solitaire Ring" class="hero-ring-img">
+                        </div>
+                        <div
+                            class="bg-white rounded-pill p-3 d-flex align-items-center shadow-sm mt-5 position-relative z-1">
+                            <i class="bi bi-patch-check-fill text-gold fs-5 me-2"></i>
+                            <span class="small fw-medium text-dark">BIS hallmarked | Purity piece, every branch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="d-flex flex-column gap-3 h-100">
+                        <div
+                            class="bg-maroon-luxury rounded-luxury hover-lift p-4 d-flex justify-content-between position-relative overflow-hidden text-white">
+                            <div class="z-1">
+                                <span
+                                    class="text-gold text-uppercase fw-semibold letter-spacing small mb-2 d-inline-block">BRIDAL</span>
+                                <h2 class="font-serif fs-2 lh-sm mt-1 mb-3">
+                                    Wedding sets<br>
+                                    made to be<br>
+                                    passed on
+                                </h2>
+                                <a href="#bridal" class="text-gold small text-decoration-none">
+                                    Explore bridal <span>→</span>
+                                </a>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="assets/images/bridal-jhumka.svg" alt="Bridal Jhumka"
+                                    class="bridal-jhumka-img">
+                            </div>
+                        </div>
+                        <div class="row g-3 flex-grow-1">
+                            <div class="col-6">
+                                <div
+                                    class="bg-ochre-luxury rounded-luxury hover-lift p-3 p-md-4 d-flex flex-column justify-content-between h-100 text-charcoal">
+                                    <div>
+                                        <span
+                                            class="small fw-semibold letter-spacing text-uppercase d-inline-block mb-2">EXCHANGE</span>
+                                        <h3 class="font-serif fs-4 lh-sm mt-1 mb-0">
+                                            Old gold,<br>
+                                            new design
+                                        </h3>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                        <img src="assets/images/chain-exchange.svg" alt="Exchange Chain"
+                                            class="exchange-chain-img img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div
+                                    class="bg-white rounded-luxury hover-lift p-3 p-md-4 d-flex flex-column justify-content-between h-100 text-charcoal">
+                                    <div>
+                                        <span
+                                            class="small fw-semibold letter-spacing text-muted text-uppercase d-inline-block mb-2">MONTHLY
+                                            GOLD PLAN</span>
+                                        <h3 class="font-serif fs-4 lh-sm mt-1 mb-0">
+                                            Save<br>
+                                            monthly.<br>
+                                            Redeem in<br>
+                                            gold.
+                                        </h3>
+                                    </div>
+                                    <div class="text-end mt-2">
+                                        <img src="assets/images/gold-plan-coin.svg" alt="Gold Savings Plan"
+                                            class="goldplan-coin-img img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--TRUST / FEATURES TICKER RIBBON -->
+        <section class="mb-5">
+            <div class="bg-dark-luxury rounded-pill py-3 px-4 text-center">
+                <div
+                    class="d-flex flex-wrap justify-content-center align-items-center gap-3 gap-md-4 text-white-50 small letter-spacing fw-medium">
+                    <span class="text-light">HALLMARKED</span>
+                    <span class="text-gold fs-6">◆</span>
+                    <span class="text-light">FREE RESIZING</span>
+                    <span class="text-gold fs-6">◆</span>
+                    <span class="text-light">LIFETIME EXCHANGE</span>
+                    <span class="text-gold fs-6">◆</span>
+                    <span class="text-light">INSURED DELIVERY*</span>
+                    <span class="text-gold fs-6">◆</span>
+                    <span class="text-light">CERTIFIED STONES</span>
+                </div>
+            </div>
+        </section>
+
+        <!--SHOP BY CATEGORY -->
+        <section id="rings" class="mb-5">
+            <div class="d-flex justify-content-between align-items-end mb-3">
+                <h2 class="font-serif fs-2 text-charcoal m-0">Shop by category</h2>
+                <a href="#all-categories" class="text-charcoal small fw-medium text-decoration-none">
+                    View all <span>→</span>
+                </a>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-lg-5 col-md-5">
+                    <div
+                        class="bg-sand-luxury rounded-luxury hover-lift p-4 p-md-5 d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <span class="small fw-semibold letter-spacing text-uppercase text-charcoal">[16]
+                                DESIGNS</span>
+                        </div>
+                        <div class="mt-5 pt-4 d-flex justify-content-between align-items-end">
+                            <h3 class="font-serif display-4 fw-normal text-charcoal m-0">Rings</h3>
+                            <div>
+                                <img src="assets/images/category-ring.svg" alt="Rings" class="cat-ring-img img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-7">
+                    <div class="row g-3">
+                        <div id="necklaces" class="col-6">
+                            <div
+                                class="bg-dark-luxury rounded-luxury hover-lift p-3 p-md-4 d-flex flex-column justify-content-between h-100 text-white">
+                                <span class="text-gold small fw-semibold letter-spacing text-uppercase">[12]
+                                    DESIGNS</span>
+                                <div class="d-flex justify-content-between align-items-end mt-4">
+                                    <h3 class="font-serif fs-3 m-0">Necklaces</h3>
+                                    <img src="assets/images/category-necklace.svg" alt="Necklaces"
+                                        class="cat-small-img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div
+                                class="bg-maroon-luxury rounded-luxury hover-lift p-3 p-md-4 d-flex flex-column justify-content-between h-100 text-white">
+                                <span class="text-gold small fw-semibold letter-spacing text-uppercase">[18]
+                                    DESIGNS</span>
+                                <div class="d-flex justify-content-between align-items-end mt-4">
+                                    <h3 class="font-serif fs-3 m-0">Earrings</h3>
+                                    <img src="assets/images/category-earrings.svg" alt="Earrings" class="cat-small-img">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bangles" class="col-6">
+                            <div
+                                class="bg-sage-luxury rounded-luxury hover-lift p-3 p-md-4 d-flex flex-column justify-content-between h-100 text-charcoal">
+                                <span class="small fw-semibold letter-spacing text-uppercase">[14] DESIGNS</span>
+                                <div class="d-flex justify-content-between align-items-end mt-4">
+                                    <h3 class="font-serif fs-3 m-0">Bangles</h3>
+                                    <img src="assets/images/category-bangles.svg" alt="Bangles" class="cat-small-img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div
+                                class="bg-ochre-luxury rounded-luxury hover-lift p-3 p-md-4 d-flex flex-column justify-content-between h-100 text-charcoal">
+                                <span class="small fw-semibold letter-spacing text-uppercase">[10] DESIGNS</span>
+                                <div class="d-flex justify-content-between align-items-end mt-4">
+                                    <h3 class="font-serif fs-3 m-0">Chains</h3>
+                                    <img src="assets/images/category-chains.svg" alt="Chains" class="cat-small-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SPOTLIGHT / CRAFT SECTION -->
+        <section class="mb-5">
+            <div class="row g-3 align-items-stretch">
+                <div class="col-lg-5 col-md-5">
+                    <div
+                        class="bg-maroon-luxury rounded-luxury hover-lift p-4 p-md-5 d-flex flex-column justify-content-between h-100 text-white">
+                        <span class="text-gold small fw-semibold letter-spacing text-uppercase">SPOTLIGHT</span>
+
+                        <div class="text-center my-4">
+                            <img src="assets/images/spotlight-necklace.svg" alt="Temple Craft Necklace"
+                                class="spotlight-necklace-img">
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center pt-2">
+                            <span class="small text-white-50">Tap the numbers to see the detail</span>
+                            <button class="circle-arrow-btn" aria-label="Next Detail">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-7 d-flex flex-column justify-content-between">
+                    <div class="p-4 p-md-5 mb-3">
+                        <span class="text-uppercase small fw-semibold letter-spacing text-gold mb-2 d-inline-block">THE
+                            TEMPLE COLLECTION</span>
+                        <h2 class="font-serif display-5 text-charcoal lh-sm my-2">
+                            Craft you can see in<br>
+                            every line.
+                        </h2>
+                        <div class="mt-4">
+                            <a href="#temple-collection" class="btn-dark-pill text-decoration-none">View collection</a>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div
+                                class="bg-sand-luxury rounded-luxury hover-lift p-4 d-flex flex-column justify-content-between h-100">
+                                <span
+                                    class="small fw-bold letter-spacing text-uppercase text-charcoal mb-3 d-inline-block">01
+                                    - FILIGREE</span>
+                                <p class="small text-uppercase text-charcoal mb-0">[SHORT DESCRIPTION OF THE TECHNIQUE]
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div
+                                class="bg-ochre-luxury rounded-luxury hover-lift p-4 d-flex flex-column justify-content-between h-100">
+                                <span
+                                    class="small fw-bold letter-spacing text-uppercase text-charcoal mb-3 d-inline-block">02
+                                    - MOTIF</span>
+                                <p class="small text-uppercase text-charcoal mb-0">[SHORT DESCRIPTION]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--FEATURED PIECES  -->
+        <section class="mb-5">
+            <div class="mb-3">
+                <h2 class="font-serif fs-2 text-charcoal m-0">Featured pieces</h2>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-lg-5 col-md-5">
+                    <div class="bg-dark-luxury rounded-luxury hover-lift cursor-pointer p-4 d-flex flex-column justify-content-between h-100 text-white position-relative"
+                        onclick="handleProductClick(event, 'Temple Haram', '22K - 24/11 g')">
+                        <div class="d-flex justify-content-end">
+                            <button class="wishlist-btn" aria-label="Add Temple Haram to wishlist"
+                                onclick="handleWishlistClick(event, 'Temple Haram', this)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="text-center my-4">
+                            <img src="assets/images/featured-temple-haram.svg" alt="Temple Haram"
+                                class="feat-haram-img">
+                        </div>
+
+                        <div
+                            class="d-flex justify-content-between align-items-end pt-3 border-top border-secondary border-opacity-25">
+                            <div>
+                                <h3 class="font-serif fs-4 text-white m-0">Temple Haram</h3>
+                                <span class="small text-white-50">22K - 24/11 g</span>
+                            </div>
+                            <span class="small fw-medium text-white">[ PRICE ]</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="bg-blush-luxury rounded-luxury hover-lift cursor-pointer p-3 p-md-4 d-flex flex-column justify-content-between h-100 text-charcoal"
+                                onclick="handleProductClick(event, 'Peacock Jhumka', '22K - 11/11 g')">
+                                <div class="d-flex justify-content-end">
+                                    <button class="wishlist-btn" aria-label="Add Peacock Jhumka to wishlist"
+                                        onclick="handleWishlistClick(event, 'Peacock Jhumka', this)">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="text-center my-2">
+                                    <img src="assets/images/featured-peacock-jhumka.svg" alt="Peacock Jhumka"
+                                        class="grid-piece-img">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end pt-2">
+                                    <div>
+                                        <h4 class="font-serif fs-5 text-charcoal m-0">Peacock Jhumka</h4>
+                                        <span class="small text-muted">22K - 11/11 g</span>
+                                    </div>
+                                    <span class="small fw-semibold text-charcoal">[ PRICE ]</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="bg-sage-luxury rounded-luxury hover-lift cursor-pointer p-3 p-md-4 d-flex flex-column justify-content-between h-100 text-charcoal"
+                                onclick="handleProductClick(event, 'Solitaire Band', '18K - 16/11 g')">
+                                <div class="d-flex justify-content-end">
+                                    <button class="wishlist-btn" aria-label="Add Solitaire Band to wishlist"
+                                        onclick="handleWishlistClick(event, 'Solitaire Band', this)">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="text-center my-2">
+                                    <img src="assets/images/featured-solitaire-band.svg" alt="Solitaire Band"
+                                        class="grid-piece-img">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end pt-2">
+                                    <div>
+                                        <h4 class="font-serif fs-5 text-charcoal m-0">Solitaire Band</h4>
+                                        <span class="small text-muted">18K - 16/11 g</span>
+                                    </div>
+                                    <span class="small fw-semibold text-charcoal">[ PRICE ]</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="bg-sand-luxury rounded-luxury hover-lift cursor-pointer p-3 p-md-4 d-flex flex-column justify-content-between h-100 text-charcoal"
+                                onclick="handleProductClick(event, 'Kasu Mala', '22K - 24/11 g')">
+                                <div class="d-flex justify-content-end">
+                                    <button class="wishlist-btn" aria-label="Add Kasu Mala to wishlist"
+                                        onclick="handleWishlistClick(event, 'Kasu Mala', this)">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="text-center my-2">
+                                    <img src="assets/images/featured-kasu-mala.svg" alt="Kasu Mala"
+                                        class="grid-piece-img">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end pt-2">
+                                    <div>
+                                        <h4 class="font-serif fs-5 text-charcoal m-0">Kasu Mala</h4>
+                                        <span class="small text-muted">22K - 24/11 g</span>
+                                    </div>
+                                    <span class="small fw-semibold text-charcoal">[ PRICE ]</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="bg-ochre-luxury rounded-luxury hover-lift cursor-pointer p-3 p-md-4 d-flex flex-column justify-content-between h-100 text-charcoal"
+                                onclick="handleProductClick(event, 'Rope Chain', '22K - 14/11 g')">
+                                <div class="d-flex justify-content-end">
+                                    <button class="wishlist-btn" aria-label="Add Rope Chain to wishlist"
+                                        onclick="handleWishlistClick(event, 'Rope Chain', this)">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="text-center my-2">
+                                    <img src="assets/images/featured-rope-chain.svg" alt="Rope Chain"
+                                        class="grid-piece-img">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end pt-2">
+                                    <div>
+                                        <h4 class="font-serif fs-5 text-charcoal m-0">Rope Chain</h4>
+                                        <span class="small text-muted">22K - 14/11 g</span>
+                                    </div>
+                                    <span class="small fw-semibold text-charcoal">[ PRICE ]</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gold-plan" class="mb-5">
+            <div class="mb-3">
+                <span class="text-uppercase small fw-semibold letter-spacing text-gold d-inline-block">HOW THE GOLD PLAN
+                    WORKS</span>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-12 col-md-4">
+                    <div class="bg-white rounded-luxury hover-lift cursor-pointer p-4 p-md-5 d-flex flex-column justify-content-between h-100 shadow-sm border border-light"
+                        onclick="handleGoldPlanClick(1, 'Join', 'Account created! Choose your monthly savings tier to start accumulating 22K gold.')">
+                        <div>
+                            <span class="font-serif display-4 fw-semibold text-charcoal lh-1 d-block">01</span>
+                            <h3 class="font-serif fs-4 text-charcoal mt-2 mb-2">Join</h3>
+                        </div>
+                        <p class="small text-muted text-uppercase letter-spacing mb-0">[STEP DETAIL]</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="bg-sand-luxury rounded-luxury hover-lift cursor-pointer p-4 p-md-5 d-flex flex-column justify-content-between h-100"
+                        onclick="handleGoldPlanClick(2, 'Save monthly', 'Auto-invest active! Save monthly installments credited at live market gold rates.')">
+                        <div>
+                            <span class="font-serif display-4 fw-semibold text-charcoal lh-1 d-block">02</span>
+                            <h3 class="font-serif fs-4 text-charcoal mt-2 mb-2">Save monthly</h3>
+                        </div>
+                        <p class="small text-muted text-uppercase letter-spacing mb-0">[STEP DETAIL]</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="bg-dark-luxury rounded-luxury hover-lift cursor-pointer p-4 p-md-5 d-flex flex-column justify-content-between h-100"
+                        onclick="handleGoldPlanClick(3, 'Redeem in gold', 'Redemption unlocked! Redeem your gold balance against any jewellery with zero making charges.')">
+                        <div>
+                            <span class="font-serif display-4 fw-semibold text-gold lh-1 d-block">03</span>
+                            <h3 class="font-serif fs-4 text-white mt-2 mb-2">Redeem in gold</h3>
+                        </div>
+                        <p class="small text-white-50 text-uppercase letter-spacing mb-0">[STEP DETAIL]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div
+                        class="bg-dark-luxury rounded-luxury hover-lift p-4 p-md-5 d-flex flex-column justify-content-between h-100 text-white">
+                        <div>
+                            <span
+                                class="text-gold small fw-semibold letter-spacing text-uppercase mb-3 d-inline-block">VISIT
+                                A SHOWROOM</span>
+                            <h2 class="font-serif display-5 mt-2 mb-4">
+                                See it. Hold it. Try it on.
+                            </h2>
+                        </div>
+                        <div>
+                            <a href="#find-branch" class="btn-white-pill text-decoration-none">Find a branch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                    <div
+                        class="bg-blush-luxury rounded-luxury hover-lift p-4 p-md-5 d-flex flex-column justify-content-between h-100 text-charcoal">
+                        <div>
+                            <span class="small fw-semibold letter-spacing text-uppercase mb-3 d-inline-block">GIFT
+                                GUIDE</span>
+                            <h2 class="font-serif display-5 mt-2 mb-4">
+                                Gifts by budget
+                            </h2>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2">
+                            <button class="btn-white-pill border-0 shadow-none">[ UNDER X ]</button>
+                            <button class="btn-white-pill border-0 shadow-none">[ X - Y ]</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--FOOTER -->
+    <footer class="bg-footer-luxury py-4 py-md-5 text-white">
+        <div class="container-fluid px-3 px-md-4 px-lg-5 site-container">
+            <div class="row g-4 align-items-center justify-content-between">
+                <div class="col-12 col-md-5">
+                    <h2 class="font-cinzel fs-3 text-white letter-spacing fw-bold m-0">AURELIA</h2>
+                    <p class="small text-white-50 letter-spacing text-uppercase mt-2 mb-0">[ADDRESS · PHONE · EMAIL]</p>
+                </div>
+
+                <div class="col-12 col-md-7 col-lg-6">
+                    <label for="newsletterEmail" class="small text-white mb-2 d-block">
+                        Get new designs and gold-rate alerts
+                    </label>
+                    <form class="d-flex flex-column flex-sm-row gap-2"
+                        onsubmit="event.preventDefault(); showToast('Subscribed!', 'You will receive our daily gold rate alerts and new designs.', 'bi-bell-fill text-gold');">
+                        <input type="email" id="newsletterEmail" class="form-control rounded-pill px-4 py-2 border-0"
+                            placeholder="Email address" required>
+                        <button type="submit" class="btn-gold-pill flex-shrink-0 border-0">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/Js/script.js"></script>
+
+</body>
+
+</html>

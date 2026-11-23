@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+    <!-- Top Stud -->
+    <circle cx="80" cy="35" r="10" stroke="#B88E3E" stroke-width="3"/>
+    <circle cx="80" cy="35" r="4" fill="#B88E3E"/>
+    <!-- Bell -->
+    <path d="M46 75 C46 52, 114 52, 114 75 Z" stroke="#B88E3E" stroke-width="4" fill="none"/>
+    <line x1="46" y1="75" x2="114" y2="75" stroke="#B88E3E" stroke-width="3"/>
+    <!-- Drops -->
+    <line x1="52" y1="75" x2="52" y2="95" stroke="#B88E3E" stroke-width="2.5"/>
+    <circle cx="52" cy="98" r="4" fill="#B88E3E"/>
+    <line x1="66" y1="75" x2="66" y2="102" stroke="#B88E3E" stroke-width="2.5"/>
+    <circle cx="66" cy="105" r="4" fill="#B88E3E"/>
+    <line x1="80" y1="75" x2="80" y2="110" stroke="#B88E3E" stroke-width="2.5"/>
+    <circle cx="80" cy="114" r="5" fill="#B88E3E"/>
+    <line x1="94" y1="75" x2="94" y2="102" stroke="#B88E3E" stroke-width="2.5"/>
+    <circle cx="94" cy="105" r="4" fill="#B88E3E"/>
+    <line x1="108" y1="75" x2="108" y2="95" stroke="#B88E3E" stroke-width="2.5"/>
+    <circle cx="108" cy="98" r="4" fill="#B88E3E"/>
+  </svg>

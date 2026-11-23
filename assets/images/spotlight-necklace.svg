@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 320" fill="none">
+    <!-- Double Neck Arc -->
+    <path d="M30 40 C70 170, 210 170, 250 40" stroke="#DEB46A" stroke-width="4" stroke-linecap="round"/>
+    <path d="M50 50 C85 150, 195 150, 230 50" stroke="#DEB46A" stroke-width="3"/>
+    <!-- Bead Accents on Arc -->
+    <circle cx="48" cy="95" r="7" fill="#DEB46A"/>
+    <circle cx="75" cy="138" r="8" fill="#DEB46A"/>
+    <circle cx="205" cy="138" r="8" fill="#DEB46A"/>
+    <circle cx="232" cy="95" r="7" fill="#DEB46A"/>
+    <!-- Center Dot 1 Indicator -->
+    <g transform="translate(140, 150)">
+      <!-- Circle with number 1 -->
+      <circle cx="-35" cy="5" r="14" fill="#DEB46A" stroke="#1B1715" stroke-width="1.5"/>
+      <text x="-35" y="10" font-family="'Cinzel', serif, sans-serif" font-size="13" font-weight="bold" fill="#1B1715" text-anchor="middle">1</text>
+    </g>
+    <!-- Center Droplet Chain -->
+    <line x1="140" y1="140" x2="140" y2="165" stroke="#DEB46A" stroke-width="4"/>
+    <circle cx="140" cy="172" r="10" stroke="#DEB46A" stroke-width="4" fill="none"/>
+    <circle cx="140" cy="172" r="4" fill="#DEB46A"/>
+    <line x1="140" y1="184" x2="140" y2="200" stroke="#DEB46A" stroke-width="4"/>
+    <!-- Large Triangle Pendant -->
+    <polygon points="140,265 190,195 90,195" stroke="#DEB46A" stroke-width="5" fill="none"/>
+    <polygon points="140,245 175,202 105,202" stroke="#DEB46A" stroke-width="2.5" fill="none"/>
+    <circle cx="140" cy="220" r="5" fill="#DEB46A"/>
+  </svg>

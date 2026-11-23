@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" fill="none">
+    <!-- Curve -->
+    <path d="M20 20 C60 100, 140 100, 180 20" stroke="#DEB46A" stroke-width="4" stroke-linecap="round"/>
+    <path d="M35 30 C70 90, 130 90, 165 30" stroke="#DEB46A" stroke-width="2" stroke-dasharray="3 4"/>
+    <!-- Beads -->
+    <circle cx="55" cy="56" r="4.5" fill="#DEB46A"/>
+    <circle cx="75" cy="73" r="4.5" fill="#DEB46A"/>
+    <circle cx="100" cy="80" r="6" fill="#DEB46A"/>
+    <circle cx="125" cy="73" r="4.5" fill="#DEB46A"/>
+    <circle cx="145" cy="56" r="4.5" fill="#DEB46A"/>
+    <!-- Center Diamond Pendant Drop -->
+    <polygon points="100,88 114,104 100,120 86,104" stroke="#DEB46A" stroke-width="3" fill="none"/>
+    <circle cx="100" cy="104" r="2.5" fill="#DEB46A"/>
+  </svg>

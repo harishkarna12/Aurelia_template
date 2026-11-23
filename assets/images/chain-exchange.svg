@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80" fill="none">
+    <ellipse cx="35" cy="40" rx="18" ry="12" stroke="#1B1715" stroke-width="4"/>
+    <ellipse cx="65" cy="40" rx="18" ry="12" stroke="#1B1715" stroke-width="4"/>
+    <ellipse cx="95" cy="40" rx="18" ry="12" stroke="#1B1715" stroke-width="4"/>
+    <ellipse cx="125" cy="40" rx="18" ry="12" stroke="#1B1715" stroke-width="4"/>
+    <!-- Interlink details -->
+    <path d="M50 40 L54 40 M80 40 L84 40 M110 40 L114 40" stroke="#1B1715" stroke-width="4" stroke-linecap="round"/>
+  </svg>

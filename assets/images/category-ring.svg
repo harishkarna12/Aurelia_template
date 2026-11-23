@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+    <!-- Main Band -->
+    <circle cx="120" cy="140" r="70" stroke="#B88E3E" stroke-width="12"/>
+    <circle cx="120" cy="140" r="55" stroke="#DEB46A" stroke-width="3" stroke-dasharray="3 3"/>
+    <!-- Diamond Top Setting -->
+    <polygon points="90,70 150,70 165,42 75,42" stroke="#B88E3E" stroke-width="5" fill="none"/>
+    <line x1="120" y1="42" x2="120" y2="70" stroke="#B88E3E" stroke-width="4"/>
+    <line x1="98" y1="42" x2="104" y2="70" stroke="#B88E3E" stroke-width="3"/>
+    <line x1="142" y1="42" x2="136" y2="70" stroke="#B88E3E" stroke-width="3"/>
+    <line x1="75" y1="42" x2="120" y2="70" stroke="#B88E3E" stroke-width="3"/>
+    <line x1="165" y1="42" x2="120" y2="70" stroke="#B88E3E" stroke-width="3"/>
+  </svg>
